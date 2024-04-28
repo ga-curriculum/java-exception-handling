@@ -2,7 +2,7 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+Students will have the capability to describe what an exception is, explain the purpose of try-catch blocks, and demonstrate the implementation of try-catch blocks.
 
 ## Prerequisites
 
@@ -12,39 +12,19 @@ tktk Write a short but descriptive summary of the content in this module.
 
 ## Content
 
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [Setup](./setup/README.md)                               | -- | -- | Setting up the development environment  |
-| [Concepts](./concepts/README.md)                         | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-01/README.md) | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-02/README.md) | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-03/README.md) | -- | -- | tktk skills covered                     |
-| **Total content**                                        | -- | -- |                                         |
+| Lesson | Time | Learning Objectives |
+| ------ |:----------:|:------ |
+| [Exceptions and `try-catch` Blocks](./execeptions-and-try-catch-blocks/README.md) | 20 min | Understand `try-catch` blocks to manage checked and unchecked exceptions for effective error handling. |
+| [IndexOutOfBoundsException](./indexoutofboundsexception/README.md) | 10 min | Implement error handling to manage `IndexOutofBoundsException` using `try-catch` blocks. |
+| [When You Should Use `try-catch` Blocks](./when-you-should-use-try-catch-blocks/README.md) | 15 min | Utlize `try-catch` blocks and the `throws` and `throw` keywords to handle and manage exceptions. |
+| **Total content**  | 45 min |  |
 
-## Level Up content
+## Additional Resources 
 
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [tktk Microlesson Name](./tktk-microlesson-04/README.md) | -- | -- | tktk skills covered                     |
-| **Total Level Up content**                               | -- | -- |                                         |
-
-## References
-
-📖 [Reference Materials](./references/README.md)
-
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
+- [`try` Blocks](https://docs.oracle.com/javase/tutorial/essential/exceptions/try.html)
+- [`catch` Blocks](https://docs.oracle.com/javase/tutorial/essential/exceptions/catch.html)
 
 ## Internal resources
-
-✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
-
-🎥 [Video Hub](./internal-resources/video-hub.md)
 
 🏗️ [Release Notes](./internal-resources/release-notes.md)
 
