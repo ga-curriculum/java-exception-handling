@@ -9,30 +9,44 @@ In most situations, `try-catch` blocks aren't mandatory, so using them is comple
 However, there are times when you're absolutely required to have `try-catch` blocks, such as with file reading and writing and networking. Let's look at a few lines of code that force us to use `try-catch`. You can use any open Java project to add these two lines of code:
 
 ```java
-URL url = new URL("http://www.google.com");
-HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+import java.net.URL;
+import java.net.HttpURLConnection;
+
+public static void main(String[] args) {
+    URL url = new URL("http://www.google.com"); // This will be underlined in red
+    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection(); // As will this
+}
 ```
 After importing the dependencies, you'll see that the IDE is still showing a compiler error. If you hover over the error, you'll see two options: surround the code with `try-catch` OR add a `throws` declaration. Let's go with `try-catch` for now, then we'll discuss the other option later.
 
 We can consolidate the two `try-catch` blocks like this:
 
 ```java
-URL url = null;
+import java.net.URL;
+import java.net.HttpURLConnection;
+// Import the necessary exceptions
+import java.io.IOException;
+import java.net.MalformedURLException;
 
-try {
-    url = new URL("http://www.google.com");
-    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-} catch(MalformedURLException e) {
-    e.printStackTrace();
-} catch(IOException e) {
-    e.printStackTrace();
+public static void main(String[] args) {
+    URL url = null;
+
+    try {
+        url = new URL("http://www.google.com"); // This line is now happy
+        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection(); // This line is also happy
+    } catch (MalformedURLException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
 }
 ```
 > Both `IOException` and `MalformedURLException` are examples of checked exceptions. You have to handle them for the program to compile.
 
 Post-Java 8, we can combine our `catch` blocks into something like what's shown below. It will do the exact same thing as above but with fewer lines of code:
 
-```
+```java
 URL url = null;
 
 try {
@@ -50,8 +64,13 @@ Now, let's talk about the other option our IDE was giving us: adding a `throws` 
 In the previous example where we were trying to connect to a URL...
 
 ```java
-URL url = new URL("http://www.google.com");
-HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+import java.net.URL;
+import java.net.HttpURLConnection;
+
+public static void main(String[] args) {
+    URL url = new URL("http://www.google.com"); // This will be underlined in red
+    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection(); // As will this
+}
 ```
 
 ...instead of `try-catch`, we could have used the `throws` keyword.
@@ -59,7 +78,7 @@ HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 Again, you can use any open project to write this code:
 
 ```java
-public void connectToURL() throws IOException {
+public static void connectToURL() throws IOException {
 	URL url = new URL("http://www.google.com");
 	HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 }
