@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[tktk Module Name] - tktk Microlesson Name](./assets/when-you-should-use-trycatch-blocks.png)
 
 **Learning objective:** By the end of this lesson, students will be able to utlize `try-catch` blocks and the `throws` and `throw` keywords to handle and manage exceptions. 
 

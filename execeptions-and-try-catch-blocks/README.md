@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[tktk Module Name] - tktk Microlesson Name](./assets/exceptions-and-trycatch-blocks.png)
 
 **Learning objective:** By the end of this lesson, students will be able to understand `try-catch blocks` to manage checked and unchecked exceptions for effective error handling. 
 

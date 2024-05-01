@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[tktk Module Name] - tktk Microlesson Name](./assets/index-out-of-bounds-exception.png)
 
 **Learning objective:** By the end of this lesson, students will be able to implement error handling to manage `IndexOutofBoundsException` using `try-catch` blocks. 
 

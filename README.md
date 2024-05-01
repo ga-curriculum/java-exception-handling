@@ -1,4 +1,4 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![[tktk Module Name]](./assets/java-exception-handling-header.png)
 
 ## About
 
@@ -6,9 +6,7 @@ Students will have the capability to describe what an exception is, explain the 
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- None.
 
 ## Content
 
