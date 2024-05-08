@@ -4,9 +4,9 @@
 
 ## Demo: `IndexOutOfBoundsException` (10 min)
 
-Let's take a look at a case where we try to access a value from an array with an index outside of its bounds. Open up the starter code for [`IndexOutOfBounds`](https://git.generalassemb.ly/GA-Cognizant/foundational-java/tree/master/java-basics/exception-handling-lesson/starter-code/IndexOutOfBounds). As you can see, this program has a list of superheroes and lets us enter a number to access our favorite one.
+Let's take a look at a case where we try to access a value from an array with an index outside of its bounds. Open up the starter code for [`IndexOutOfBounds`](../Starter-Code/IndexOutOfBounds/). As you can see, this program has a list of superheroes and lets us enter a number to access our favorite one.
 
-If we run the program and type in a number outside of the bounds of the `ArrayList`, we get an [`IndexOutOfBoundsException`](https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/IndexOutOfBoundsException.html) — an example of an unchecked exception — and everything crashes.
+If we run the program and type in a number outside of the bounds of the `ArrayList`, we get an [`IndexOutOfBoundsException`](../Starter-Code/IndexOutOfBounds/) — an example of an unchecked exception — and everything crashes.
 
 Instead of having the program crash, we can log the error and allow the program to handle the exception gracefully by letting the user know that what they entered isn't valid.
 

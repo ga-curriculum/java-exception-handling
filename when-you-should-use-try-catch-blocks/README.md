@@ -90,7 +90,7 @@ The biggest advantage of using this keyword is having all exception handling in 
 ### `throw` keyword
 We use this keyword to throw an exception manually from anywhere in the code. This concept is best explained through an example. 
 
-In this example, we'll be looking at a program that divides two numbers for us and displays the result. Open up the [`DivisionExample` starter code](https://git.generalassemb.ly/GA-Cognizant/foundational-java/tree/master/java-basics/exception-handling-lesson/starter-code/DivisionExample).
+In this example, we'll be looking at a program that divides two numbers for us and displays the result. Open up the [`DivisionExample` starter code](../Starter-Code/DivisionExample/).
 
 > **Knowledge Check**: Take two minutes to look at the code and determine how to handle the error if it occurs.
 
