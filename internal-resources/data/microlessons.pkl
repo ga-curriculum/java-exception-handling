@@ -1,0 +1,32 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+setup = new Template.Microlesson {
+  friendlyName = "Setup"
+  dirName = "setup"
+  type = "Content"
+  videoUrl = ""
+}
+
+exceptionsAndTryCatchBlocks = new Template.Microlesson {
+  friendlyName = "Exceptions and <code>try</code>-<code>catch</code> Blocks"
+  dirName = "execeptions-and-try-catch-blocks"
+  type = "Content"
+  videoUrl = ""
+}
+
+indexOutofBoundsException = new Template.Microlesson {
+  friendlyName = "<code>IndexOutofBoundsException</code>"
+  dirName = "indexoutofboundsexception"
+  type = "Content"
+  videoUrl = ""
+}
+
+whenYouShouldUseTryCatchBlocks = new Template.Microlesson {
+  friendlyName = "When You Should Use <code>try</code>-<code>catch</code> Blocks"
+  dirName = "when-you-should-use-try-catch-blocks"
+  type = "Content"
+  videoUrl = ""
+}
+
