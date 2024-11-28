@@ -13,7 +13,7 @@ We often manually check for code that could cause errors through conditional sta
 
 ## Exceptions
 
-Before we start talking about the `try`-`catch` block, we need to talk about exceptions. **Exceptions** are events that occur while a program is running and interrupt the normal flow of the code. These can be null-pointer exceptions, divide-by-zero exceptions, index-out-of-bounds exceptions, and more. You can review many of the built-in exceptions in the [Java documentation](https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html).
+Before we start talking about the `try`-`catch` block, we need to talk about exceptions. **Exceptions** are events that occur while a program is running and interrupt the normal flow of the code. These can be null-pointer exceptions, divide-by-zero exceptions, index-out-of-bounds exceptions, and more. You can review many of the built-in exceptions in the [Java documentation](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html).
 
 There are two types of exceptions: checked and unchecked. A **checked exception** occurs at compile time, which means a programmer is forced to handle these exceptions; otherwise, the program won't compile. Checked exceptions are subclasses of the `Exception` class. An **unchecked exception** — also known as a **runtime exception** — occurs at the time a program executes. You don't have to handle them, but you can if you'd like.
 

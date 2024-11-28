@@ -97,11 +97,11 @@ The biggest advantage of using this keyword is having all exception handling in 
 
 We use this keyword to throw an exception manually from anywhere in the code. This concept is best explained through an example.
 
-In this example, we'll be looking at a program that divides two numbers for us and displays the result. Open up the [`DivisionExample` starter code](../Starter-Code/DivisionExample/).
+In this example, we'll be looking at a program that divides two numbers for us and displays the result. Open up the `Division` starter code in the <code class="filepath">./src/main/java/org/example/Division.java</code> file.
 
 > ❓ Take two minutes to look at the code and determine how to handle the error if it occurs.
 
-The program runs smoothly if you use any value higher than zero as a divisor. But, as soon as you input zero as a divisor, the program fails with the exception `/ by zero`. This is a type of [`ArithmeticException`](https://docs.oracle.com/javase/8/docs/api/?java/lang/ArithmeticException.html).
+The program runs smoothly if you use any value higher than zero as a divisor. But, as soon as you input zero as a divisor, the program fails with the exception `/ by zero`. This is a type of [`ArithmeticException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ArithmeticException.html).
 
 In this case, in the `division()` method, we need to check if the divisor is zero, then throw an exception. We can handle this exception by surrounding our code with a `try`-`catch` block, but this time we'll let the calling method — in our case `main()` — handle the exception:
 
