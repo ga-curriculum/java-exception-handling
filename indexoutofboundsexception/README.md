@@ -1,9 +1,9 @@
 <h1>
   <span class="headline">Java Exception Handling</span>
-  <span class="subhead"><code>IndexOutofBoundsException</code></span>
+  <span class="subhead"><code>IndexOutOfBoundsException</code></span>
 </h1>
 
-**Learning objective:** By the end of this lesson, students will be able to implement error handling to manage `IndexOutofBoundsException` using `try`-`catch` blocks.
+**Learning objective:** By the end of this lesson, students will be able to implement error handling to manage `IndexOutOfBoundsException` using `try`-`catch` blocks.
 
 ## Demo: `IndexOutOfBoundsException`
 

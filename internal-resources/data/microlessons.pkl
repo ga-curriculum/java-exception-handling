@@ -16,8 +16,8 @@ exceptionsAndTryCatchBlocks = new Template.Microlesson {
   videoUrl = ""
 }
 
-indexOutofBoundsException = new Template.Microlesson {
-  friendlyName = "<code>IndexOutofBoundsException</code>"
+indexOutOfBoundsException = new Template.Microlesson {
+  friendlyName = "<code>IndexOutOfBoundsException</code>"
   dirName = "indexoutofboundsexception"
   type = "Content"
   videoUrl = ""
