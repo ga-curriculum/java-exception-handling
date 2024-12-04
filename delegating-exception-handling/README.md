@@ -1,9 +1,95 @@
 <h1>
   <span class="headline">Java Exception Handling</span>
-  <span class="subhead">When You Should Use <code>try</code>-<code>catch</code> Blocks</span>
+  <span class="subhead">Delegating Exception Handling<code>try</code>-<code>catch</code> Blocks</span>
 </h1>
 
-**Learning objective:** By the end of this lesson, students will be able to utilize `try`-`catch` blocks and the `throws` and `throw` keywords to handle and manage exceptions.
+**Learning objective:** By the end of this lesson, you'll be able to write java code in which a called method delegates delegates exception handling responsibilities to a calling method using `throws` keyword 
+
+## Checked and unchecked exceptions
+A runtime error or, in other words, an exception is an unexpected event that occurs once we click on the **Run** button on our IDE. If we look a little deeper to understand, there are two steps actually happening in sequence upon hitting that button:
+
+1. **Compile/Build**: The java language code that we can understand is converted into a assembler language code that the Java Virtual Machine (JVM) can understand.
+2. **Execution**: The assembler language code is executed on the JVM.
+
+The compile step can finish its task successfully only when all the Java rules and Java statement syntaxes are adhered to. Hence, the compiler **checks** the code to catch such exception-causingerrors. Hence, the exceptions that get caught during the compile step are called **checked exceptions**. Checked exceptions are encounted and displayed to the coder even before the actual execution starts. (For example: missing `{`s or `;`s, IOException, etc.)
+
+In contrast, **unchecked exceptions** are the real runtime exceptions that cannot be caught during compile step and can occur only during the execution step. (for example: FileNotFoundException, ArrayIndexOutOfBoundsException, etc.)
+
+Checked exceptions force the programmer, to either debug the exception or implement error handling using `try-catch` in order to run the progam.
+
+## Error handling deep-dive
+We understand that once JRE **catches** an exception that is **thrown** to it, the JRE halts the execution flow of the program and sends the information in the `Exception` object to the output console. There is something interesting that happens between the time JRE catches the exception and JRE halts the execution, which actually makes error handling possible.
+
+Once the JRE catches an exception object:
+- **Flow 1**: JRE searcher for a matching error handler (`try-catch` block with the right `ExceptionType` in the `catch` block) inside the method where the exception occured. Once found, JRE invokes the execution of that `catch` block.
+- **Flow 2**: If no appropriate error handler is found, JRE searches the immediate calling method in the call stack which called the method in which the error occured to invoke error handling. If no appropriate error handler is found, it keeps moving the seach higher through each method in the call stack until the appropriate `try-catch` block is found.
+- **Flow 3**: If no appropriate error handler is foung, then the JRE halts the execution and sends the information in the `Exception` object to the output console.
+
+While coding a method, if we determine that there is a possibility of an exception and determining how to handle that exception within that method is logically impossible, or is out of the functional scope of that method, then we can delegate the error handling responsibility to any method that might call our method during program execution. In Java, this is done using the `throws` keyword.
+
+## The `throws` keyword
+
+Extended syntax for method declaration:
+```java
+returnType methodName(parameters) throws ExceptionType {
+    // Method logic here
+}
+```
+- `throws`: Declares that the execution of this method might cause an exception and there needs to be an error handler in any calling method.
+- `ExceptionType`**The type of exception the method might throw.
+
+As you might have guessed it, the `throws` part of a method declaration is optional. However, if declared, it forces the compiler to check for an appropriate error handler in the call stack of the method. If none are found, then a checked exception is generated. It forces the coder to implement the error handling before running the program again.
+
+Usage:
+```java
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ThrowsExample {
+    public static void readFile() throws IOException {
+        File file = new File("nonexistent.txt");
+        FileReader reader = new FileReader(file); // May throw IOException
+    }
+
+    public static void main(String[] args) {
+        try {
+            readFile();
+        } catch (IOException e) {
+            System.out.println("Error: Unable to read the file.");
+        }
+    }
+}
+```
+## Differentiating `throw` and `throws`
+Since these two keywords are so alike, lets conceptually understand the differences between them
+
+|Aspect|`throws`|`throw`|
+|:---|:---|:---|
+|**Purpose**| Declares exceptions a method might cause.| Generates an exception during program execution.|
+|**Usage location**| As a part of method declaration.| Inside any statement block.|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## When you should use `try`-`catch` blocks
 

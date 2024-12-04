@@ -21,18 +21,18 @@ courses {
     name = "jcd"
     microlessons {
       mls.setup
-      mls.exceptionsAndTryCatchBlocks
-      mls.indexOutOfBoundsException
-      mls.whenYouShouldUseTryCatchBlocks
+      mls.handlingExceptions
+      mls.generatingExceptions
+      mls.delegatingExceptionHandling
     }
   }
   new {
     name = "jsc"
     microlessons {
       mls.setup
-      mls.exceptionsAndTryCatchBlocks
-      mls.indexOutOfBoundsException
-      mls.whenYouShouldUseTryCatchBlocks
+      mls.handlingExceptions
+      mls.generatingExceptions
+      mls.delegatingExceptionHandling
     }
   }
   new {
@@ -40,9 +40,9 @@ courses {
     microlessons {
       // add microlessons here, in the order they should be delivered
       mls.setup
-      mls.exceptionsAndTryCatchBlocks
-      mls.indexOutOfBoundsException
-      mls.whenYouShouldUseTryCatchBlocks
+      mls.handlingExceptions
+      mls.generatingExceptions
+      mls.delegatingExceptionHandling
     }
   }
 }
