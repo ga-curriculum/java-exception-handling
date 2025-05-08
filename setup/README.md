@@ -33,8 +33,6 @@ rm -rf .git
 
 Open IntelliJ IDEA Community Edition and open the project by selecting the **Open** option on the launch screen.
 
-Next, navigate to the `java-collections-lab` directory you just created and open the project.
-
 Trust the project if you are prompted.
 
 Navigate into the <code class="filepath">./src/main/java/org.example</code> directory and note the three files it contains:

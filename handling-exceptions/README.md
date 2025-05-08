@@ -11,30 +11,36 @@ Java provides a sequential structure to handle exceptions:
 
 ```java
 try {
-    // Code that has the probability to throw an exception needs to be enclosed inside this block
+    // Code that has the potential to throw an exception needs to be enclosed
+    // inside this block
 } catch (ExceptionType e) {
-    // Code to handle the exception encountered in try block needs to reside in this block
+    // Code to handle the exception encountered in the try block needs to reside
+    // in this block
 } finally {
-    // An optional block that contains code that will always run, whether or not an exception occurred.
+    // An optional block that contains code that will always run, whether or not
+    // an exception occurred.
 }
 ```
 
 ## Control flow of the `try-catch-finally` block
 
-### Exception occurance flow
+### Exception occurrence flow
+
 1. The program execution enters the `try` block.
 2. If an exception occurs, the remaining code in the `try` block is skipped.
 3. The program execution jumps to the `catch` block.
 4. After the `catch` block executes, the program moves to the `finally` block (if it exists).
 
-### Exception non-occurance flow
+### Exception non-occurrence flow
+
 1. The program execution enters the `try` block.
 2. Executes all the code in the `try` block.
 3. Skips the `catch` block.
 4. Executes the `finally` block (if it exists).
 
 ## Demo of `try-catch-finally` block
-Here is a program that gracefully handles an `ArithmeticException` (division by zero) gracefully using `try-catch-finally` block.
+
+Here is a program that gracefully handles an `ArithmeticException` (division by zero) exception gracefully by using `try-catch-finally` block.
 
 ```java
 public class SafeDivision {
@@ -55,11 +61,14 @@ public class SafeDivision {
 }
 ```
 
-## Independent Practice
-(10 minutes)
+<div class="activity discussion">
+  <h2 class="title">Exceptions</h2>
+  <span class="minutes">5 min</span>
+</div>
 
-Using the sample code given in this lesson, try to find answers for the following questions?
+Using the sample code given in this lesson, let's discuss the answers to the following questions:
+
 1. Can we have a `catch` or `finally` block without a `try` block?
 2. Can we have a `try` block without a `catch` or `finally` block?
-3. Can we code any statements in the space between the `try`, `catch` and `finally` blocks?
+3. Can we code any statements in the space between the `try`, `catch`, and `finally` blocks?
 4. Can we have multiple `catch` blocks for a single `try` block?
