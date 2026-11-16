@@ -11,10 +11,10 @@ Open your Terminal application and navigate to your <code class="filepath">~/cod
 cd ~/code/ga/lectures
 ```
 
-Clone the [Java Exception Handling starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/java-exception-handling-starter) repository with this command:
+Clone the [Java Exception Handling starter code](https://github.com/ga-curriculum/java-exception-handling-starter) repository with this command:
 
 ```bash
-git clone https://git.generalassemb.ly/modular-curriculum-all-courses/java-exception-handling-starter.git java-exception-handling
+git clone https://github.com/ga-curriculum/java-exception-handling-starter.git java-exception-handling
 ```
 
 > 💡 The `java-exception-handling` at the end of this command will place the contents of the `java-exception-handling-starter` repo into a directory named <code class="filepath">java-exception-handling</code>.

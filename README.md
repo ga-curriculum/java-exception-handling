@@ -33,7 +33,7 @@ It's necessary for us to anticipate and handle such exceptions to prevent applic
 
 ### Starter code
 
-🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/java-exception-handling-starter)
+🟢 [Starter code](https://github.com/ga-curriculum/java-exception-handling-starter)
 
 ### Course landing pages
 
